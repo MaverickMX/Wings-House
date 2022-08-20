@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    /* height: 100vh; */
+    background-image: url(../img/328.jpg);
+    background-size: cover;
+}
+
+.heroHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.heroHeader .logo{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.headerRight{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.headerRight p{
+    font-family: 'Lato', sans-serif;
+}
+.headerRight .menu{
+    list-style: none;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.4rem;
+    gap: 2rem;
+}
+.heroMain{
+    display: flex;
+    padding-inline: 5rem;
+}
+.heroMain > div{
+    flex:1;
+}
+.heroText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+}
+.heroText h4{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    font-size: 1.2rem;
+    border: 2px dashed green;
+    width: max-content;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+.heroText h2{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 5rem;
+    line-height: 1;
+    text-shadow: 6px  4px  green ;
+}
+.heroText h3{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3rem;
+    text-shadow: 6px  4px  green ;
+}
+
+.heroImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 3rem;
+    position: relative;
+}
+.heroImg img{
+    width: 500px;
+}
+.oferta{
+    position: absolute;
+    bottom: 2rem;
+    left: 4rem;
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    padding: 5rem;
+    border-radius: 50%;
+    border: 5px dashed white;
+    outline: 5px green solid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+.dia, .precio{
+    color: white;
+}
+
+.dia{
+    font-size: 1.4rem;
+}
+.precio{
+    font-size: 3rem;
+    line-height: 1;
+}
