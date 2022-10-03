@@ -114,3 +114,183 @@
     font-size: 3rem;
     line-height: 1;
 }
+
+.grid{
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'item1 item2'
+    'item1 item3';
+    gap: 1rem;
+}
+
+.grid_item{
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    padding: 2rem;
+}
+
+.grid_item h4{
+    font-size: 1.6rem;
+}
+
+.grid_item h5{
+    font-size: 1.2rem;
+}
+.grid_item1{
+    grid-area: item1;
+    background-image: url(../img/front-view-delicious-chicken-wings-on-cutting-board-dark-background-meal-dinner-food-fries-sandwich-lunch-meat-color.jpg);
+    height: 400px;
+  
+}
+
+.grid_item2{
+    grid-area: item2;
+    background-image: url(../img/grilled-chicken-wings-on-the-flaming-grill-with-grilled-vegetables-in-barbecue-sauce-with-pepper-seeds-rosemary-salt.jpg);
+ 
+}
+
+.grid_item3{
+    grid-area: item3;
+    background-image: url(../img/pexels-joe-l-2789328.jpg);
+    
+}
+
+.enjoy{
+    padding: 0 6rem 6rem 6rem;
+}
+
+.titles{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.titles h4{
+    background-color: green;
+    width: max-content;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+}
+
+.titles h2{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3rem;
+}
+
+.titles p{
+    font-family: 'Lato', sans-serif;
+}
+
+.cards{
+    display: flex;
+}
+
+.card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card img{
+    max-width: 100%;
+    height: 300px;
+}
+
+.card h4{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.card p{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    width: 50%;
+}
+
+.card a{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 1rem;
+    background-color: green;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.events{
+    padding: 0 6rem 6rem 6rem;
+}
+
+.inner{
+    display: flex;
+    padding: 2rem;
+    box-shadow: 15px 15px 30px rgb(184, 184, 184);
+}
+
+.inner_right img{
+    width: 100%;
+}
+
+.inner_right{
+    flex: 1.5;
+}
+
+.inner_left{
+    flex: 1;
+    padding-block:3rem ;
+    position: relative;
+}
+
+.inner_left h5{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: green;
+    letter-spacing: 1px;
+}
+
+.inner_left h4{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2rem;
+    color: rgb(212, 139, 3);
+}
+
+.inner_left p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    width: 80%;
+}
+
+.dot{
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.dots{
+    background-color: green;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+}
+
+.dots_active{
+    background-color: rgb(212, 139, 3);
+}
