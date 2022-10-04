@@ -294,3 +294,163 @@
 .dots_active{
     background-color: rgb(212, 139, 3);
 }
+
+.encabezado h5{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.encabezado h4{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2rem;
+    color: rgb(212, 139, 3) ;
+}
+
+.encabezado{
+    text-align: center;
+    padding: 0 6rem 6rem 6rem;
+}
+
+.grid_formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "nombre     correo"
+    "fecha      hora"
+    "personas   boton";
+    width: 35rem;
+    gap: 2rem;
+    
+}
+
+.nombre{
+    grid-area: nombre;
+}
+
+.correo{
+    grid-area: correo;
+}
+
+.fecha{
+    grid-area: fecha;
+}
+
+.hora{
+    grid-area: hora;
+}
+
+.personas{
+    grid-area: personas;
+}
+
+
+
+.form{
+    padding: 0 6rem 6rem 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/1000000723.png), url(../img/beer-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center, left center;
+}
+
+.grid_formulario input{
+    padding: .5rem 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    color: green;
+}
+
+.grid_formulario .boton{
+    grid-area: boton;
+    border: 0;
+    background-color: rgb(212, 139, 3);
+    font-family: 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+footer{
+    padding: 0 6rem 6rem 6rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/hand-holding-crispy-fried-chicken-dipped-in-tomato-sauce.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    padding: 2rem;
+    position: relative;
+}
+
+.footer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-top{
+    display: flex;
+    padding-block: 3rem;
+}
+
+.footer-top h2{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+.footer p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    width: 60%;
+}
+
+.footer-top > div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-top > div:nth-child(2){
+    text-align: center;
+    align-items: flex-end;
+}
+
+.footer-top .texto p, .footer-top .texto a{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.footer-top div a{
+    padding-right: 4rem;
+}
+
+.footer-top, .footer-bottom{
+    z-index: 1;
+}
+
+.footer-bottom{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
